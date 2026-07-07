@@ -1,0 +1,14 @@
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    <title id="title">CineExplorer</title>
+    <desc id="desc">Logotipo do CineExplorer com simbolo de filme e play.</desc>
+    <circle cx="24" cy="24" r="20" fill="#1A1A1A"/>
+    <circle cx="24" cy="24" r="16" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="24" cy="12" r="3" fill="#FFFFFF"/>
+    <circle cx="36" cy="24" r="3" fill="#FFFFFF"/>
+    <circle cx="24" cy="36" r="3" fill="#FFFFFF"/>
+    <circle cx="12" cy="24" r="3" fill="#FFFFFF"/>
+    <path d="M21 18L31 24L21 30V18Z" fill="#BD1111"/>
+    <path d="M44 38L54 46" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round"/>
+    <text x="66" y="22" fill="#1A1A1A" font-family="Lato, Arial, sans-serif" font-size="18" font-weight="900">Cine</text>
+    <text x="66" y="39" fill="#FFFFFF" font-family="Lato, Arial, sans-serif" font-size="18" font-weight="900">Explorer</text>
+</svg>
