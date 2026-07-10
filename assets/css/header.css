@@ -9,12 +9,6 @@
     height: 7rem;
 }
 
-/* .header__logo{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-} */
-
 .header__nav{
     display: flex;
     justify-content: space-between;
