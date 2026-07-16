@@ -4,3 +4,14 @@ body{
     flex-wrap: nowrap;
 }
 
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 7rem);
+}
+
+@media (max-width: 900px){
+    .mainContent{
+        flex-direction: column;
+    }
+}
