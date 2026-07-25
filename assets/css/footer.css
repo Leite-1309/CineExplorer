@@ -19,6 +19,6 @@
 .footer__text--highlight{
     font-weight: bold;
     background: linear-gradient(90deg, #EF4444, #FFFFFF);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
