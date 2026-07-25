@@ -10,8 +10,3 @@ body{
     min-height: calc(100vh - 7rem);
 }
 
-@media (max-width: 900px){
-    .mainContent{
-        flex-direction: column;
-    }
-}

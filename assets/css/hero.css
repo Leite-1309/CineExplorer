@@ -8,7 +8,10 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 20rem 6rem 0 0;
+    justify-content: center;
+    margin-top: -20rem;
+    flex-basis: 60%;
+    padding: 0 3rem
 }
 
 .hero__title{
@@ -63,6 +66,7 @@
     justify-content: center;
     align-items: center;
     padding: 6rem 2rem;
+    flex-basis: 40%;
 }
 
 .hero__image-frame{
