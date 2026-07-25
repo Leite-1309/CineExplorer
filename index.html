@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/logo.svg">
     <link rel="stylesheet" href="./assets/css/import.css">
-
+    <script src="./assets/js/login.js" defer></script>
     <title>CineExplorer</title>
 </head>
 
@@ -31,6 +31,25 @@
 
     <!-- CONTEUDO PRINCIPAL -->
     <main class="mainContent">
+
+        <dialog class="modal__login">
+            <button class="modal__close" type="button">X</button>
+            <form class="login__form" action="" method="">
+                <h2 class="modal__title">Faça login para continuar</h2>
+                <div class="login__field">
+                    <label class="login__label" for="email">Email</label>
+                    <input class="login__input" type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="senha">Senha</label>
+                    <input class="login__input" type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <button class="login__button" type="submit">Entrar</button>
+            </form>
+        </dialog>
+
         <section class="hero__image">
             <div class="hero__image-frame">
                 <img class="hero__poster" src="./assets/img/filmeSneaks.png" alt="Imagem de destaque de filmes">
@@ -41,7 +60,7 @@
             <h1 class="hero__title">Sua melhor escolha para filmes</h1>
             <p class="hero__description">Descubra os melhores filmes, assista a trailers, explore diferentes gêneros e encontre sua próxima história favorita em um catálogo pensado para os apaixonados por cinema.</p>
             <div class="hero__buttons">
-                <button class="hero__button">Fazer login</button>
+                <button class="hero__button" id="button_login">Fazer login</button>
                 <a href="./pages/lista.html" class="hero__button">Explorar filmes</a>
             </div>
         </section>
