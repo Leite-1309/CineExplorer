@@ -147,7 +147,7 @@ function calcularMedia() {
     let media = soma/totalFilmes;
     return media;
 }
-console.log(`A média de nota dos filmes é igual a ${calcularMedia().toFixed(2)}`);
+console.log(`A média de nota dos filmes é igual a ${calcularMedia().toFixed(2)}`);//template strings
 
 //arrow function
 // const calcularMedia = () => {
