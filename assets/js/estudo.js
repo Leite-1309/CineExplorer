@@ -148,3 +148,16 @@ function calcularMedia() {
     return media;
 }
 console.log(`A média de nota dos filmes é igual a ${calcularMedia().toFixed(2)}`);
+
+//arrow function
+// const calcularMedia = () => {
+//     let soma = 0;
+//     let totalFilmes = 0;
+//     for (filme of listaFilmes) {
+//         soma += filme.nota;
+//         totalFilmes++;
+//     }
+//     let media = soma/totalFilmes;
+//     return media;
+// }
+
