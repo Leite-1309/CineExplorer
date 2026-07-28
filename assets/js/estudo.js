@@ -161,3 +161,33 @@ console.log(`A média de nota dos filmes é igual a ${calcularMedia().toFixed(2)
 //     return media;
 // }
 
+//Desestruturação
+const pessoa = {
+    nome: "lucas",
+    idade: 18,
+    altura: 1.70,
+    estadoCivil: "solteiro"
+};
+
+const nomeNormal = pessoa.nome;//Sem desestruturação;
+console.log(`nome normal: ${nomeNormal}`)
+const { nome } = pessoa;//Com desestruturação
+console.log(`nome com desestruturação: ${nome}`)
+const { nome: pessoaNome } = pessoa;//Com desestruturação e mudando o nome
+console.log(`nome com desestruturação e mudando o nome da variável: ${pessoaNome}`)
+let nomeX;
+({ nome: nomeX } = pessoa);//Com desestruturação e atribuindo a uma variável já existente
+console.log(`nome com desestruturação e atribuindo a uma variável já existente: ${pessoaNome}`)
+
+//Desestruturação em array
+const pessoas = ["lucas", "antonio", "fernanda", "guilherme"];
+let pessoa1 = pessoas[0];//sem desestruturação
+console.log(pessoa1);
+let [,segunda, desestruturacao, ...resto] = pessoas;
+console.log(segunda, desestruturacao, resto); 
+
+//desestruturação de palavra
+function quebrarPalavra([...letras]) {
+    console.log(letras)
+}
+quebrarPalavra("Lucas")
