@@ -209,3 +209,11 @@ console.log(map1.size);
 map1.delete(2);
 console.log(map1.size);
 console.log(map1.get(2));
+
+//Filter
+const filmesBons = listaFilmes.filter(filme => filme.nota > 8.7).map(filme => filme.titulo);
+console.log(filmesBons)
+
+// filmesBons.forEach(filme => {
+//     console.log(`nome do filme: ${filme.titulo}. nota: ${filme.nota}`);
+// });
