@@ -122,35 +122,22 @@ const listaFilmes = [
     }
 ];
 
-// Dia 3
-// if (listaFilmes[1].nota < 6) {
-//     console.log("o filme é regular");
-// } else if (listaFilmes[1].nota < 8) {
-//     console.log("o filme é bom");
-// } else {
-//     console.log("O filme é excelente");
+// // Dia 3
+// // if (listaFilmes[1].nota < 6) {
+// //     console.log("o filme é regular");
+// // } else if (listaFilmes[1].nota < 8) {
+// //     console.log("o filme é bom");
+// // } else {
+// //     console.log("O filme é excelente");
+// // }
+
+// // Dia 4
+// for (filme of listaFilmes) {
+//     console.log(filme.titulo);
 // }
 
-// Dia 4
-for (filme of listaFilmes) {
-    console.log(filme.titulo);
-}
-
-// Dia 5
-function calcularMedia() {
-    let soma = 0;
-    let totalFilmes = 0;
-    for (filme of listaFilmes) {
-        soma += filme.nota;
-        totalFilmes++;
-    }
-    let media = soma/totalFilmes;
-    return media;
-}
-console.log(`A média de nota dos filmes é igual a ${calcularMedia().toFixed(2)}`);//template strings
-
-//arrow function
-// const calcularMedia = () => {
+// // Dia 5
+// function calcularMedia() {
 //     let soma = 0;
 //     let totalFilmes = 0;
 //     for (filme of listaFilmes) {
@@ -160,60 +147,83 @@ console.log(`A média de nota dos filmes é igual a ${calcularMedia().toFixed(2)
 //     let media = soma/totalFilmes;
 //     return media;
 // }
+// console.log(`A média de nota dos filmes é igual a ${calcularMedia().toFixed(2)}`);//template strings
 
-//Desestruturação
-const pessoa = {
-    nome: "lucas",
-    idade: 18,
-    altura: 1.70,
-    estadoCivil: "solteiro"
-};
+// //arrow function
+// // const calcularMedia = () => {
+// //     let soma = 0;
+// //     let totalFilmes = 0;
+// //     for (filme of listaFilmes) {
+// //         soma += filme.nota;
+// //         totalFilmes++;
+// //     }
+// //     let media = soma/totalFilmes;
+// //     return media;
+// // }
 
-const nomeNormal = pessoa.nome;//Sem desestruturação;
-console.log(`nome normal: ${nomeNormal}`)
-const { nome } = pessoa;//Com desestruturação
-console.log(`nome com desestruturação: ${nome}`)
-const { nome: pessoaNome } = pessoa;//Com desestruturação e mudando o nome
-console.log(`nome com desestruturação e mudando o nome da variável: ${pessoaNome}`)
-let nomeX;
-({ nome: nomeX } = pessoa);//Com desestruturação e atribuindo a uma variável já existente
-console.log(`nome com desestruturação e atribuindo a uma variável já existente: ${pessoaNome}`)
+// //Desestruturação
+// const pessoa = {
+//     nome: "lucas",
+//     idade: 18,
+//     altura: 1.70,
+//     estadoCivil: "solteiro"
+// };
 
-//Desestruturação em array
-const pessoas = ["lucas", "antonio", "fernanda", "guilherme"];
-let pessoa1 = pessoas[0];//sem desestruturação
-console.log(pessoa1);
-let [,segunda, desestruturacao, ...resto] = pessoas;
-console.log(segunda, desestruturacao, resto); 
+// const nomeNormal = pessoa.nome;//Sem desestruturação;
+// console.log(`nome normal: ${nomeNormal}`)
+// const { nome } = pessoa;//Com desestruturação
+// console.log(`nome com desestruturação: ${nome}`)
+// const { nome: pessoaNome } = pessoa;//Com desestruturação e mudando o nome
+// console.log(`nome com desestruturação e mudando o nome da variável: ${pessoaNome}`)
+// let nomeX;
+// ({ nome: nomeX } = pessoa);//Com desestruturação e atribuindo a uma variável já existente
+// console.log(`nome com desestruturação e atribuindo a uma variável já existente: ${pessoaNome}`)
 
-//desestruturação de palavra
-function quebrarPalavra([...letras]) {
-    console.log(letras)
-}
-quebrarPalavra("Lucas")
+// //Desestruturação em array
+// const pessoas = ["lucas", "antonio", "fernanda", "guilherme"];
+// let pessoa1 = pessoas[0];//sem desestruturação
+// console.log(pessoa1);
+// let [,segunda, desestruturacao, ...resto] = pessoas;
+// console.log(segunda, desestruturacao, resto); 
 
-//Map
-const map1 = new Map();
+// //desestruturação de palavra
+// function quebrarPalavra([...letras]) {
+//     console.log(letras)
+// }
+// quebrarPalavra("Lucas")
 
-map1.set(1, "Lucas");
-map1.set(2, "Pai");
-map1.set(3, "mãe");
-map1.set(4, "gui");
+// //Map
+// const map1 = new Map();
 
-console.log(map1.get(2));
+// map1.set(1, "Lucas");
+// map1.set(2, "Pai");
+// map1.set(3, "mãe");
+// map1.set(4, "gui");
 
-map1.set(2, "Kleber");
+// console.log(map1.get(2));
 
-console.log(map1.get(2));
-console.log(map1.size);
-map1.delete(2);
-console.log(map1.size);
-console.log(map1.get(2));
+// map1.set(2, "Kleber");
 
-//Filter
-const filmesBons = listaFilmes.filter(filme => filme.nota > 8.7).map(filme => filme.titulo);
-console.log(filmesBons)
+// console.log(map1.get(2));
+// console.log(map1.size);
+// map1.delete(2);
+// console.log(map1.size);
+// console.log(map1.get(2));
 
-// filmesBons.forEach(filme => {
-//     console.log(`nome do filme: ${filme.titulo}. nota: ${filme.nota}`);
-// });
+// //Filter
+// const filmesBons = listaFilmes.filter(filme => filme.nota > 8.7).map(filme => filme.titulo);
+// console.log(filmesBons)
+
+// // filmesBons.forEach(filme => {
+// //     console.log(`nome do filme: ${filme.titulo}. nota: ${filme.nota}`);
+// // });
+
+// //Fetch API 13bcd1c9
+async function buscarFilmes(nomeFilme) {
+    const resposta = await fetch(`http://www.omdbapi.com/?apikey=13bcd1c9&s=${nomeFilme}`);
+    const dados = await resposta.json();
+    
+    console.log(dados);
+} 
+
+buscarFilmes("elite squad");
