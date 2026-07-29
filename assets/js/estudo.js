@@ -191,3 +191,21 @@ function quebrarPalavra([...letras]) {
     console.log(letras)
 }
 quebrarPalavra("Lucas")
+
+//Map
+const map1 = new Map();
+
+map1.set(1, "Lucas");
+map1.set(2, "Pai");
+map1.set(3, "mãe");
+map1.set(4, "gui");
+
+console.log(map1.get(2));
+
+map1.set(2, "Kleber");
+
+console.log(map1.get(2));
+console.log(map1.size);
+map1.delete(2);
+console.log(map1.size);
+console.log(map1.get(2));
