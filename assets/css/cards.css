@@ -1,0 +1,61 @@
+.moviesContainer {
+    width: min(1100px, 92%);
+    margin: 0 auto 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    justify-content: center;
+    gap: 24px;
+}
+
+.movieCard {
+    background: #111;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.movieCard img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.movieCardContent {
+    padding: 14px;
+}
+
+.movieCardTitle {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.movieCardYear {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.noMovies {
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 1000px) {
+    .moviesContainer {
+        grid-template-columns: repeat(3, 220px);
+    }
+}
+
+@media (max-width: 760px) {
+    .moviesContainer {
+        grid-template-columns: repeat(2, 220px);
+    }
+}
+
+@media (max-width: 520px) {
+    .moviesContainer {
+        grid-template-columns: 1fr;
+    }
+}

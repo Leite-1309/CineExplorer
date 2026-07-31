@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/logo.svg">
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <script src="../assets/js/login.js" defer></script>
+    <script src="../assets/js/estudo.js" defer></script>
+    <script src="../assets/js/lista.js" defer></script>
+    <title>Lista De filmes</title>
+</head>
+
+<body class="homePage">
+    
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <nav class="header__nav">
+
+            <ul class="header__ul">
+                <li class="header__li"><a href="../index.html" >Home</a></li>
+                <li class="header__li"><a href="./lista.html">Lista de filmes</a></li>
+            </ul>
+
+            <div class="header__search">
+                <img src="../assets/img/logo.svg" alt="Logo do CineExplorer">
+            </div>
+
+        </nav> 
+    </header>
+
+    <!-- CONTEUDO PRINCIPAL -->
+    <main class="mainContent listContent">
+
+        <div class="searchBar">
+            <input id="movieSearchInput" type="text" placeholder="Pesquise um filme">
+        </div>
+
+        <section id="moviesContainer" class="moviesContainer"></section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <p class="footer__text">&copy;2026 CineExplorer. Todos os direitos reservados.</p>
+        <p class="footer__text">Desenvolvido por <span class="footer__text--highlight">Lucas Leite Carlos</span></p>
+    </footer>
+
+</body>
+</html>
